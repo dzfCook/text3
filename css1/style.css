@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix{
+    overflow: hidden;
+    zoom: 1;
+}
+header,main,footer,section,article,nav,aside{
+    display: block;
+}
+header{
+    border: 1px solid #ddd;
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9999;
+}
+main{
+    padding-top: 60px;
+}
+nav,.container{
+    margin: 0 auto;
+    width: 1200px;
+}
+nav{
+    /* border: 1px soli blue; */
+    height: 60px;                        
+    line-height: 60px;
+}
+ 
+nav img{
+    height: 40px;
+    /* 图片放置中间 */
+    vertical-align: middle;
+}
+nav ul{
+    list-style: none;
+    float: right;
+}
+nav ul li{
+    float: left;
+}
+nav ul  li a{
+   padding: 5px 10px;
+}
+a{
+    /* 去掉下划线 */
+    text-decoration: none;
+    color:#1e2c5c;
+}
+nav ul li a:hover{
+     background-color: #000;
+     color: #fff;
+}
+.banner img{
+   width: 100%;
+}
+.container{
+    font-size: 14px;
+    color: #222;
+}
+/* .comments{
+    line-height: 5px;
+} */
+.comments::after,.comments::before{
+    font-family: "宋体";
+    color: #999;
+}
+.comments::before{
+    content: """
+}
+.comments::after{
+    content: """
+}
+.item{
+    position: relative;
+}
+.item h2{
+    margin: 20px auto;
+    color: #1e2c5c;
+
+    border-left: 20px solid #1e2c5c;
+    padding: 15px;
+}
+.item h2::before{
+    content: '▋';
+    padding-right: 15px;
+}
+.item img{
+    width: 100%;
+}
+.item .img1,.item .img2,.item .img3{
+    border-radius: 50px;
+}
+.item .img1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 100px;
+    top: 150px;
+}
+.item .img2{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 150px;
+    top: 200px;
+}
+.item .img3{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 200px;
+    top: 300px;
+}
+footer{
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+}
+.foot{
+    line-height: 2;
+}
